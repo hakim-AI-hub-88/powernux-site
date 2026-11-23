@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://hakim-ai-hub-88.github.io/powernux-site/sitemap.xml

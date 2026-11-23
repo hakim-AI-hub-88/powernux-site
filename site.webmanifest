@@ -1,0 +1,15 @@
+{
+  "name": "Powernux",
+  "short_name": "Powernux",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#07061a",
+  "theme_color": "#07061a",
+  "icons": [
+    {
+      "src": "assets/img/logo.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ]
+}

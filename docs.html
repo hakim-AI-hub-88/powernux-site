@@ -1,0 +1,222 @@
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Documentation — Install &amp; use Powernux on Linux (Ubuntu, Debian, Fedora)</title>
+<meta name="description" content="Complete Powernux guide: install on Ubuntu, Debian, Fedora or with AppImage, install tools, keyboard shortcuts, AI providers, run from source, build packages and create your own tool.">
+<link rel="canonical" href="https://hakim-ai-hub-88.github.io/powernux-site/docs.html">
+<meta name="author" content="Es-somid Abdelhakim">
+<meta name="robots" content="index, follow, max-image-preview:large">
+<meta name="theme-color" content="#07061a">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Powernux">
+<meta property="og:title" content="Documentation — Install &amp; use Powernux on Linux (Ubuntu, Debian, Fedora)">
+<meta property="og:description" content="Complete Powernux guide: install on Ubuntu, Debian, Fedora or with AppImage, install tools, keyboard shortcuts, AI providers, run from source, build packages and create your own tool.">
+<meta property="og:url" content="https://hakim-ai-hub-88.github.io/powernux-site/docs.html">
+<meta property="og:image" content="https://hakim-ai-hub-88.github.io/powernux-site/assets/img/og.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="Powernux — the modular productivity toolkit for Linux">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Documentation — Install &amp; use Powernux on Linux (Ubuntu, Debian, Fedora)">
+<meta name="twitter:description" content="Complete Powernux guide: install on Ubuntu, Debian, Fedora or with AppImage, install tools, keyboard shortcuts, AI providers, run from source, build packages and create your own tool.">
+<meta name="twitter:image" content="https://hakim-ai-hub-88.github.io/powernux-site/assets/img/og.png">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="icon" href="assets/img/logo.png" type="image/png" sizes="96x96">
+<link rel="apple-touch-icon" href="assets/img/logo.png">
+<link rel="manifest" href="site.webmanifest">
+<link rel="alternate" type="application/rss+xml" title="Powernux blog" href="https://hakim-ai-hub-88.github.io/powernux-site/rss.xml">
+<link rel="preload" href="assets/fonts/inter-latin.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="assets/css/style.css">
+<script type="module" src="assets/js/main.js"></script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "TechArticle", "headline": "Powernux documentation — install, configure and develop", "author": {"@type": "Person", "name": "Es-somid Abdelhakim", "url": "https://ma.linkedin.com/in/abdelhakim-essomid"}, "url": "https://hakim-ai-hub-88.github.io/powernux-site/docs.html", "about": "Powernux"}</script>
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://hakim-ai-hub-88.github.io/powernux-site/"}, {"@type": "ListItem", "position": 2, "name": "Docs", "item": "https://hakim-ai-hub-88.github.io/powernux-site/docs.html"}]}</script>
+</head><body>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="progress" aria-hidden="true"></div>
+<header class="nav">
+  <div class="container nav-inner">
+    <a class="brand" href="index.html" aria-label="Powernux home"><img src="assets/img/logo.png" alt="" width="34" height="34">Powernux</a>
+    <nav class="nav-links" aria-label="Main"><a href="index.html">Home</a><a href="index.html#tools">Tools</a><a href="docs.html" aria-current="page">Docs</a><a href="download.html">Download</a><a href="blog/index.html">Blog</a></nav>
+    <div class="nav-cta">
+      <a class="btn ghost small" href="https://github.com/hakim-AI-hub-88/Powernux" rel="noopener"><svg class="icon" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg> Star on GitHub</a>
+      <a class="btn small" href="download.html" data-magnetic><svg class="icon" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M256 32c0-17.7-14.3-32-32-32s-32 14.3-32 32l0 210.7-41.4-41.4c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3l96 96c12.5 12.5 32.8 12.5 45.3 0l96-96c12.5-12.5 12.5-32.8 0-45.3s-32.8-12.5-45.3 0L256 242.7 256 32zM64 320c-35.3 0-64 28.7-64 64l0 32c0 35.3 28.7 64 64 64l320 0c35.3 0 64-28.7 64-64l0-32c0-35.3-28.7-64-64-64l-46.9 0-56.6 56.6c-31.2 31.2-81.9 31.2-113.1 0L110.9 320 64 320zm304 56a24 24 0 1 1 0 48 24 24 0 1 1 0-48z"/></svg> Download</a>
+    </div>
+    <button class="nav-toggle" type="button" aria-label="Open menu" aria-expanded="false"><svg class="icon" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M0 96C0 78.3 14.3 64 32 64l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 128C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32l384 0c17.7 0 32 14.3 32 32s-14.3 32-32 32L32 288c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32L32 448c-17.7 0-32-14.3-32-32s14.3-32 32-32l384 0c17.7 0 32 14.3 32 32z"/></svg></button>
+  </div>
+</header>
+<main id="main">
+<section class="page-hero"><div class="container">
+  <span class="eyebrow reveal"><svg class="icon" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path d="M256 141.3l0 309.3 .5-.2C311.1 427.7 369.7 416 428.8 416l19.2 0 0-320-19.2 0c-42.2 0-84.1 8.4-123.1 24.6-16.8 7-33.4 13.9-49.7 20.7zM230.9 61.5L256 72 281.1 61.5C327.9 42 378.1 32 428.8 32L464 32c26.5 0 48 21.5 48 48l0 352c0 26.5-21.5 48-48 48l-35.2 0c-50.7 0-100.9 10-147.7 29.5l-12.8 5.3c-7.9 3.3-16.7 3.3-24.6 0l-12.8-5.3C184.1 490 133.9 480 83.2 480L48 480c-26.5 0-48-21.5-48-48L0 80C0 53.5 21.5 32 48 32l35.2 0c50.7 0 100.9 10 147.7 29.5z"/></svg> Documentation</span>
+  <h1 class="reveal" data-delay="1">Everything you need to <span class="gradient-text">get going.</span></h1>
+  <p class="lead reveal" data-delay="2">Install Powernux, add tools, configure shortcuts and AI providers — or run it from source and build your own tools.</p>
+</div></section>
+<div class="container docs">
+  <nav class="toc" aria-label="On this page"><strong>On this page</strong><a href="#requirements">Requirements</a><a href="#install">Install</a><a href="#first-launch">First launch</a><a href="#tools">Install tools</a><a href="#shortcuts">Keyboard shortcuts</a><a href="#ai">AI providers & keys</a><a href="#background">Background & startup</a><a href="#source">Run from source</a><a href="#build">Build packages</a><a href="#create-tool">Create a tool</a><a href="#data">Where data lives</a><a href="#uninstall">Uninstall</a><a href="#troubleshooting">Troubleshooting</a></nav>
+  <article class="prose">
+<h2 id="requirements">Requirements</h2>
+<ul>
+<li><strong>Linux with GNOME 45 to 50</strong> — Ubuntu 24.04+, Debian 13+, Fedora 40+, Linux Mint, Pop!_OS, Zorin, openSUSE…</li>
+<li><strong>Processor:</strong> Intel / AMD (x86-64) or ARM64.</li>
+<li><strong>Wayland or X11</strong> — Powernux is designed for GNOME on Wayland.</li>
+</ul>
+<div class="callout"><svg class="icon" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM224 160a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm-8 64l48 0c13.3 0 24 10.7 24 24l0 88 8 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-80 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l24 0 0-64-24 0c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg><p>Windows and macOS are not supported: the tools are built on GNOME Shell and Wayland.</p></div>
+
+<h2 id="install">Install</h2>
+<p>Choose your system. Every command installs the <strong>latest version</strong> directly from GitHub Releases.</p>
+<div class="terminal" data-terminal>
+  <div class="term-bar"><span class="lights"><i></i><i></i><i></i></span><div class="term-tabs" role="tablist" aria-label="Install method"></div>
+    <button class="term-copy" type="button"><svg class="icon" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-200.6c0-17.4-7.1-34.1-19.7-46.2L370.6 17.8C358.7 6.4 342.8 0 326.3 0L192 0zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-16-64 0 0 16-192 0 0-256 16 0 0-64-16 0z"/></svg><span>Copy</span></button></div>
+  <pre class="term-body"></pre>
+  <script type="application/json">{"Ubuntu / Debian": [{"comment": "# Download and install the latest .deb"}, {"cmd": "wget https://github.com/hakim-AI-hub-88/Powernux/releases/latest/download/powernux_amd64.deb"}, {"cmd": "sudo apt install ./powernux_amd64.deb"}, {"out": "Setting up powernux (0.11.0) …"}, {"cmd": "powernux"}, {"ok": "✓ Powernux is running — open Tools Manager to add tools"}], "Fedora / openSUSE": [{"comment": "# Install the latest .rpm directly"}, {"cmd": "sudo dnf install https://github.com/hakim-AI-hub-88/Powernux/releases/latest/download/powernux.x86_64.rpm"}, {"out": "Complete!"}, {"cmd": "powernux"}, {"ok": "✓ Powernux is running"}], "AppImage": [{"comment": "# Any distribution, no installation"}, {"cmd": "wget https://github.com/hakim-AI-hub-88/Powernux/releases/latest/download/powernux_amd64.AppImage"}, {"cmd": "chmod +x powernux_amd64.AppImage"}, {"cmd": "./powernux_amd64.AppImage"}, {"ok": "✓ Powernux is running"}], "From source": [{"comment": "# Needs Node.js 22+, Rust and the Tauri system libraries"}, {"cmd": "git clone https://github.com/hakim-AI-hub-88/Powernux.git && cd Powernux"}, {"cmd": "npm install"}, {"cmd": "npm run tauri dev"}, {"ok": "✓ Development build running at http://localhost:1420"}]}</script>
+</div>
+<h3>One-click install</h3>
+<p>Download the package from the <a href="download.html">download page</a> and double-click it: GNOME Software / App Center opens and installs it for you.</p>
+<h3>ARM64 laptops</h3>
+<p>Use <code>powernux_arm64.deb</code> or <code>powernux.aarch64.rpm</code> instead — same commands.</p>
+<div class="terminal" data-terminal>
+  <div class="term-bar"><span class="lights"><i></i><i></i><i></i></span><span class="muted" style="font-size:12.5px;margin-left:8px">ARM64</span>
+    <button class="term-copy" type="button"><svg class="icon" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-200.6c0-17.4-7.1-34.1-19.7-46.2L370.6 17.8C358.7 6.4 342.8 0 326.3 0L192 0zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-16-64 0 0 16-192 0 0-256 16 0 0-64-16 0z"/></svg><span>Copy</span></button></div>
+  <pre class="term-body"></pre>
+  <script type="application/json">{"ARM64": [{"cmd": "wget https://github.com/hakim-AI-hub-88/Powernux/releases/latest/download/powernux_arm64.deb"}, {"cmd": "sudo apt install ./powernux_arm64.deb"}]}</script>
+</div>
+
+<h2 id="first-launch">First launch</h2>
+<ol>
+<li>Open <strong>Powernux</strong> from your applications menu (or run <code>powernux</code>).</li>
+<li>Choose your language in <strong>Settings → Language</strong> (English by default, French available). The choice is remembered.</li>
+<li>Go to <strong>Tools Manager</strong>.</li>
+</ol>
+
+<h2 id="tools">Install tools</h2>
+<p>Powernux contains no tools: you install only the ones you need. In <strong>Tools Manager</strong>, click <strong>Download</strong> on a tool. Powernux then:</p>
+<ol><li>downloads it from GitHub Releases (the right version for your processor),</li><li>verifies its SHA-256 checksum and Ed25519 signature,</li><li>installs it and turns it <strong>ON</strong>.</li></ol>
+<p>Click a tool to open its page: ON/OFF switch, settings (shortcut, provider, keys…), actions and <strong>Remove</strong>. When a new version is published, an <strong>Update</strong> button appears.</p>
+<div class="callout warn"><svg class="icon" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path d="M256 512a256 256 0 1 0 0-512 256 256 0 1 0 0 512zM224 160a32 32 0 1 1 64 0 32 32 0 1 1 -64 0zm-8 64l48 0c13.3 0 24 10.7 24 24l0 88 8 0c13.3 0 24 10.7 24 24s-10.7 24-24 24l-80 0c-13.3 0-24-10.7-24-24s10.7-24 24-24l24 0 0-64-24 0c-13.3 0-24-10.7-24-24s10.7-24 24-24z"/></svg><p><strong>Log out and back in once</strong> after installing Smart Window Manager, Voice Typing, Focus Mode or AI Face. On Wayland, GNOME loads new Shell extensions only at login.</p></div>
+
+<h2 id="shortcuts">Keyboard shortcuts</h2>
+<table><thead><tr><th>Tool</th><th>Default shortcut</th><th>Action</th></tr></thead><tbody>
+<tr><td>Clipboard Manager</td><td><kbd>Win</kbd> + <kbd>Shift</kbd> + <kbd>V</kbd></td><td>Open the clipboard history</td></tr>
+<tr><td>Smart Window Manager</td><td><kbd>Win</kbd> + <kbd>Shift</kbd> + <kbd>T</kbd></td><td>Pin / unpin the active window on top</td></tr>
+<tr><td>Smart Window Manager</td><td><kbd>Win</kbd> + <kbd>Shift</kbd> + <kbd>O</kbd></td><td>Arrange the windows of the current workspace</td></tr>
+<tr><td>Smart Window Manager</td><td><kbd>Win</kbd> + <kbd>Alt</kbd> + <kbd>1</kbd> … (your choice)</td><td>Restore a saved workspace</td></tr>
+<tr><td>Voice Typing</td><td>hold <kbd>Win</kbd> + <kbd>E</kbd></td><td>Dictate, release to transcribe &amp; paste (short press: hands-free)</td></tr>
+<tr><td>AI Face Assistant</td><td><kbd>Win</kbd> + <kbd>Shift</kbd> + <kbd>A</kbd></td><td>Explain the selected error</td></tr>
+<tr><td>Focus Mode</td><td><kbd>Win</kbd> + <kbd>Shift</kbd> + <kbd>F</kbd></td><td>Pause / resume the session</td></tr>
+<tr><td>Notes</td><td><kbd>Win</kbd> + <kbd>Shift</kbd> + <kbd>N</kbd></td><td>Open your notes</td></tr>
+<tr><td>Screenshot</td><td><kbd>Win</kbd> + <kbd>Shift</kbd> + <kbd>S</kbd></td><td>Capture an area, window or screen</td></tr>
+</tbody></table>
+<p>Every shortcut can be changed in the tool's settings. Powernux refuses shortcuts already used by GNOME or another tool.</p>
+
+<h2 id="ai">AI providers &amp; keys</h2>
+<p><strong>Voice Typing</strong> works with Groq (fast, free tier), OpenAI, AssemblyAI, or any OpenAI-compatible server. <strong>AI Face Assistant</strong> works with Groq, OpenAI, Google Gemini, Mistral, OpenRouter, or <strong>Ollama locally</strong> (no key, nothing leaves your PC).</p>
+<ol><li>Create a key on the provider's website (e.g. console.groq.com).</li><li>Open the tool's page in Powernux and paste it in the key field.</li><li>The key is stored encrypted in the <strong>GNOME Keyring</strong> — never in plain text, never shared.</li></ol>
+<p>The <strong>Advanced developer mode</strong> button on a tool page unlocks custom providers: API address, model, key and authentication header.</p>
+
+<h2 id="background">Background &amp; startup</h2>
+<p>Tools you turn on start automatically when you log in — without opening Powernux. A small launcher (<code>powernux --autostart</code>) starts them and exits in about half a second. You can turn this off in <strong>Settings → Startup</strong>. Closing the Powernux window never stops your tools.</p>
+
+<h2 id="source">Run from source</h2>
+<p>You need <strong>Node.js 22+</strong>, <strong>Rust</strong> (rustup) and the Tauri system libraries.</p>
+<div class="terminal" data-terminal>
+  <div class="term-bar"><span class="lights"><i></i><i></i><i></i></span><span class="muted" style="font-size:12.5px;margin-left:8px">Development</span>
+    <button class="term-copy" type="button"><svg class="icon" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-200.6c0-17.4-7.1-34.1-19.7-46.2L370.6 17.8C358.7 6.4 342.8 0 326.3 0L192 0zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-16-64 0 0 16-192 0 0-256 16 0 0-64-16 0z"/></svg><span>Copy</span></button></div>
+  <pre class="term-body"></pre>
+  <script type="application/json">{"Development": [{"comment": "# Ubuntu / Debian: system libraries"}, {"cmd": "sudo apt install libwebkit2gtk-4.1-dev libgtk-3-dev librsvg2-dev libssl-dev libxdo-dev build-essential curl wget file"}, {"comment": "# Rust"}, {"cmd": "curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh"}, {"comment": "# Powernux"}, {"cmd": "git clone https://github.com/hakim-AI-hub-88/Powernux.git"}, {"cmd": "cd Powernux && npm install"}, {"cmd": "npm run tauri dev"}, {"ok": "✓ Hot-reloading development build"}]}</script>
+</div>
+<div class="terminal" data-terminal>
+  <div class="term-bar"><span class="lights"><i></i><i></i><i></i></span><span class="muted" style="font-size:12.5px;margin-left:8px">Fedora</span>
+    <button class="term-copy" type="button"><svg class="icon" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-200.6c0-17.4-7.1-34.1-19.7-46.2L370.6 17.8C358.7 6.4 342.8 0 326.3 0L192 0zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-16-64 0 0 16-192 0 0-256 16 0 0-64-16 0z"/></svg><span>Copy</span></button></div>
+  <pre class="term-body"></pre>
+  <script type="application/json">{"Fedora": [{"comment": "# Fedora: system libraries"}, {"cmd": "sudo dnf install webkit2gtk4.1-devel gtk3-devel librsvg2-devel openssl-devel libxdo-devel"}]}</script>
+</div>
+<p>In development, Powernux reads the local catalog <code>registry/registry.json</code>, so you can test tools before publishing them.</p>
+
+<h2 id="build">Build packages</h2>
+<div class="terminal" data-terminal>
+  <div class="term-bar"><span class="lights"><i></i><i></i><i></i></span><span class="muted" style="font-size:12.5px;margin-left:8px">Release build</span>
+    <button class="term-copy" type="button"><svg class="icon" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-200.6c0-17.4-7.1-34.1-19.7-46.2L370.6 17.8C358.7 6.4 342.8 0 326.3 0L192 0zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-16-64 0 0 16-192 0 0-256 16 0 0-64-16 0z"/></svg><span>Copy</span></button></div>
+  <pre class="term-body"></pre>
+  <script type="application/json">{"Release build": [{"cmd": "npm run tauri build"}, {"out": "Finished 3 bundles: .deb · .rpm · .AppImage"}, {"comment": "# Only the .deb:"}, {"cmd": "npm run tauri build -- --bundles deb"}]}</script>
+</div>
+<p>Packages land in <code>src-tauri/target/release/bundle/</code>. Official releases are built by GitHub Actions on Ubuntu 24.04 for x86-64 and ARM64.</p>
+
+<h2 id="create-tool">Create a tool</h2>
+<p>A tool is an independent program plus a <code>manifest.json</code>. Powernux builds its settings page automatically from it.</p>
+<pre class="terminal" style="padding:20px;color:#d4d2ec;overflow-x:auto">{
+  &quot;id&quot;: &quot;my-tool&quot;,
+  &quot;name&quot;: &quot;My Tool&quot;,
+  &quot;version&quot;: &quot;1.0.0&quot;,
+  &quot;entry&quot;: &quot;my-tool-binary&quot;,
+  &quot;settings&quot;: [
+    { &quot;key&quot;: &quot;shortcut&quot;, &quot;type&quot;: &quot;shortcut&quot;, &quot;label&quot;: &quot;Shortcut&quot;, &quot;default&quot;: &quot;&lt;Super&gt;&lt;Shift&gt;m&quot; }
+  ],
+  &quot;shortcuts&quot;: [{ &quot;setting&quot;: &quot;shortcut&quot;, &quot;name&quot;: &quot;My Tool&quot;, &quot;args&quot;: [&quot;--show&quot;] }]
+}</pre>
+<ul><li>Setting types: <code>toggle</code>, <code>select</code>, <code>shortcut</code>, <code>text</code>, <code>secret</code> (stored in the keyring).</li>
+<li>Your program receives <code>--reload</code> when a setting changes and <code>--quit</code> when it is turned off.</li>
+<li>Write <code>status.json</code> (<code>level</code>, <code>message</code>) to show a message in Tools Manager.</li></ul>
+<div class="terminal" data-terminal>
+  <div class="term-bar"><span class="lights"><i></i><i></i><i></i></span><span class="muted" style="font-size:12.5px;margin-left:8px">Package & publish</span>
+    <button class="term-copy" type="button"><svg class="icon" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-200.6c0-17.4-7.1-34.1-19.7-46.2L370.6 17.8C358.7 6.4 342.8 0 326.3 0L192 0zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-16-64 0 0 16-192 0 0-256 16 0 0-64-16 0z"/></svg><span>Copy</span></button></div>
+  <pre class="term-body"></pre>
+  <script type="application/json">{"Package & publish": [{"cmd": "npm run package:my-tool"}, {"out": "==> Signature de l'archive"}, {"ok": "✓ compiled, signed and added to the catalog"}, {"comment": "# Publish: GitHub Actions builds it for x86-64 and ARM64"}, {"cmd": "npm run release -- my-tool"}]}</script>
+</div>
+
+<h2 id="data">Where data lives</h2>
+<table><thead><tr><th>What</th><th>Location</th></tr></thead><tbody>
+<tr><td>Preferences (language, theme…)</td><td><code>~/.config/powernux/preferences.json</code></td></tr>
+<tr><td>Installed tools and their state</td><td><code>~/.local/share/powernux/installed.json</code></td></tr>
+<tr><td>Tool data (history, notes, workspaces…)</td><td><code>~/.local/share/powernux/data/</code></td></tr>
+<tr><td>API keys</td><td>GNOME Keyring (encrypted)</td></tr></tbody></table>
+<p>Nothing is sent anywhere except to the services you choose. See the <a href="https://github.com/hakim-AI-hub-88/Powernux/blob/main/PRIVACY.md" rel="noopener">privacy policy</a>.</p>
+
+<h2 id="uninstall">Uninstall</h2>
+<ol><li>In Powernux: <strong>Settings → Uninstall everything</strong> — removes tools, data, keys, shortcuts, GNOME extensions and the startup entry.</li><li>Then remove the application:</li></ol>
+<div class="terminal" data-terminal>
+  <div class="term-bar"><span class="lights"><i></i><i></i><i></i></span><div class="term-tabs" role="tablist" aria-label="Install method"></div>
+    <button class="term-copy" type="button"><svg class="icon" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M192 0c-35.3 0-64 28.7-64 64l0 256c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-200.6c0-17.4-7.1-34.1-19.7-46.2L370.6 17.8C358.7 6.4 342.8 0 326.3 0L192 0zM64 128c-35.3 0-64 28.7-64 64L0 448c0 35.3 28.7 64 64 64l192 0c35.3 0 64-28.7 64-64l0-16-64 0 0 16-192 0 0-256 16 0 0-64-16 0z"/></svg><span>Copy</span></button></div>
+  <pre class="term-body"></pre>
+  <script type="application/json">{"Ubuntu / Debian": [{"cmd": "sudo apt remove powernux"}], "Fedora / openSUSE": [{"cmd": "sudo dnf remove powernux"}], "AppImage": [{"cmd": "rm powernux_amd64.AppImage"}]}</script>
+</div>
+
+<h2 id="troubleshooting">Troubleshooting</h2>
+<h3>“Log out and back in once” stays orange</h3>
+<p>GNOME has not loaded the tool's extension yet. Log out completely (not just lock the screen) and log back in. Check that extensions are enabled in the <em>Extensions</em> app.</p>
+<h3>A shortcut does nothing</h3>
+<p>Open the tool's page: the status message explains what is missing (key, re-login…). Make sure the tool is ON and the shortcut is not used by another app.</p>
+<h3>“Catalog unavailable”</h3>
+<p>Powernux could not reach GitHub. Check your connection, then click <strong>Refresh</strong> in Tools Manager. Installed tools keep working offline.</p>
+<h3>Voice Typing: “Invalid API key”</h3>
+<p>Paste a new key in the tool's settings — it replaces the one stored in the keyring.</p>
+<p>Still stuck? <a href="https://github.com/hakim-AI-hub-88/Powernux/issues" rel="noopener">Open an issue on GitHub</a>.</p>
+</article>
+</div>
+</main><footer>
+  <div class="container">
+    <div class="foot">
+      <div>
+        <a class="brand" href="index.html"><img src="assets/img/logo.png" alt="" width="34" height="34">Powernux</a>
+        <p class="muted" style="max-width:340px;font-size:15px;margin-top:14px">The modular productivity toolkit for Linux. Free and open source, made for GNOME.</p>
+        <div class="socials">
+          <a href="https://github.com/hakim-AI-hub-88/Powernux" aria-label="Powernux on GitHub" rel="noopener"><svg class="icon" viewBox="0 0 512 512" aria-hidden="true" focusable="false"><path d="M216.5 362.5c-66-8-112.5-55.5-112.5-117 0-25 9-52 24-70-6.5-16.5-5.5-51.5 2-66 20-2.5 47 8 63 22.5 19-6 39-9 63.5-9s44.5 3 62.5 8.5c15.5-14 43-24.5 63-22 7 13.5 8 48.5 1.5 65.5 16 19 24.5 44.5 24.5 70.5 0 61.5-46.5 108-113.5 116.5 17 11 28.5 35 28.5 62.5l0 52C323 491.5 335.5 500 350.5 494 441 459.5 512 369 512 257 512 115.5 397 0 255.5 0S0 115.5 0 257c0 111 70.5 203 165.5 237.5 13.5 5 26.5-4 26.5-17.5l0-40c-7 3-16 5-24 5-33 0-52.5-18-66.5-51.5-5.5-13.5-11.5-21.5-23-23-6-.5-8-3-8-6 0-6 10-10.5 20-10.5 14.5 0 27 9 40 27.5 10 14.5 20.5 21 33 21s20.5-4.5 32-16c8.5-8.5 15-16 21-21z"/></svg></a>
+          <a href="https://ma.linkedin.com/in/abdelhakim-essomid" aria-label="Es-somid Abdelhakim on LinkedIn" rel="noopener"><svg class="icon" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M416 32L31.9 32C14.3 32 0 46.5 0 64.3L0 447.7C0 465.5 14.3 480 31.9 480L416 480c17.6 0 32-14.5 32-32.3l0-383.4C448 46.5 433.6 32 416 32zM135.4 416l-66.4 0 0-213.8 66.5 0 0 213.8-.1 0zM102.2 96a38.5 38.5 0 1 1 0 77 38.5 38.5 0 1 1 0-77zM384.3 416l-66.4 0 0-104c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9l0 105.8-66.4 0 0-213.8 63.7 0 0 29.2 .9 0c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9l0 117.2z"/></svg></a>
+          <a href="https://hakim-ai-hub-88.github.io/powernux-site/rss.xml" aria-label="Blog RSS feed"><svg class="icon" viewBox="0 0 448 512" aria-hidden="true" focusable="false"><path d="M0 64c0-17.7 14.3-32 32-32 229.8 0 416 186.2 416 416 0 17.7-14.3 32-32 32s-32-14.3-32-32C384 253.6 226.4 96 32 96 14.3 96 0 81.7 0 64zM0 416a64 64 0 1 1 128 0 64 64 0 1 1 -128 0zM32 160c159.1 0 288 128.9 288 288 0 17.7-14.3 32-32 32s-32-14.3-32-32c0-123.7-100.3-224-224-224-17.7 0-32-14.3-32-32s14.3-32 32-32z"/></svg></a>
+        </div>
+      </div>
+      <div><h4>Product</h4><ul>
+        <li><a href="index.html#tools">Tools</a></li><li><a href="download.html">Download</a></li>
+        <li><a href="https://github.com/hakim-AI-hub-88/Powernux/releases" rel="noopener">Releases</a></li><li><a href="index.html#security">Security</a></li></ul></div>
+      <div><h4>Learn</h4><ul>
+        <li><a href="docs.html">Documentation</a></li><li><a href="docs.html#source">Run from source</a></li>
+        <li><a href="docs.html#create-tool">Create a tool</a></li><li><a href="blog/index.html">Blog</a></li></ul></div>
+      <div><h4>Project</h4><ul>
+        <li><a href="https://github.com/hakim-AI-hub-88/Powernux" rel="noopener">GitHub repository</a></li><li><a href="https://ma.linkedin.com/in/abdelhakim-essomid" rel="noopener">Author on LinkedIn</a></li>
+        <li><a href="https://github.com/hakim-AI-hub-88/Powernux/blob/main/PRIVACY.md" rel="noopener">Privacy</a></li><li><a href="https://github.com/hakim-AI-hub-88/Powernux/blob/main/LICENSE" rel="noopener">MIT License</a></li></ul></div>
+    </div>
+    <div class="copyright"><span>© <span data-year>2026</span> Es-somid Abdelhakim · MIT License</span><span>Made for Linux, with Rust &amp; Tauri</span></div>
+  </div>
+</footer>
+</body>
+</html>
